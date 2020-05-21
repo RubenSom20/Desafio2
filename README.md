@@ -1,2 +1,2 @@
 # Medium Challenge
-### Loquesea
+### Lo que sea
