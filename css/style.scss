@@ -155,3 +155,11 @@ ul {
     margin-top: 0;
   }
 }
+
+svg{
+  fill: $gray;
+  &:hover{
+    cursor: pointer;
+    color: $gray-hover;
+  }
+}
