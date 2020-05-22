@@ -1,5 +1,6 @@
 // variables:
 $gray: rgba(0, 0, 0, 0.54);
+$gray-hover: #5d5e5e;
 $green: #03a87c;
 $green-hover: #029e74;
 
@@ -30,10 +31,10 @@ $breakpoint-lg: 1360px;
 
 .nav-link {
   color: $gray;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 
   &:hover {
-    color: black !important;
+    color: $gray-hover !important;
   }
 }
 
@@ -82,62 +83,73 @@ $breakpoint-lg: 1360px;
   }
 }
 
-.hidden {
-  display: none;
-
-  @include media(md) {
-    display: block;
+ul {
+  padding: 0;
+  display: flex;
+  width: 100%;
+  overflow: auto;
+  justify-content: space-evenly;
+  li {
+    white-space: nowrap;
+    width: auto;
+    list-style: none;
+    margin: 0 10px;
+    color: $gray;
+    &:hover {
+      cursor: pointer;
+      color: $gray-hover;
+    }
   }
 }
 
-.btn-learn{
+.btn-learn {
   background-color: $green;
   color: #fff;
-  &:hover{
+  &:hover {
     background-color: $green-hover;
     color: #fff;
   }
 }
 
-.anchor{
-  font-size: .8rem;
-  a{
+.anchor {
+  font-size: 0.8rem;
+  a {
     color: black;
   }
 }
 
-.card-order{
+.card-order {
   display: flex;
-  .b{
+  .b {
     order: 2;
     padding: 5px;
   }
-  .a{
+  .a {
     order: 1;
   }
   @include media(md) {
-    .b{
+    .b {
       order: 1;
       padding: 5px;
     }
-    .a{
+    .a {
       order: 2;
     }
   }
 }
 
-.card-img-top{
+.card-img-top {
   height: 150px;
 }
 
-.see-editors{
-  color:$green;
+.see-editors {
+  color: $green;
 }
-.text-aside{
-  font-size: .8rem;
+.text-aside {
+  font-size: 0.8rem;
 }
 
-.popular-on-med{
+.popular-on-med {
   margin-top: 25px;
   @include media(md) {
     margin-top: 0;

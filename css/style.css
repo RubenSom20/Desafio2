@@ -1,10 +1,10 @@
 .nav-link {
   color: rgba(0, 0, 0, 0.54);
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .nav-link:hover {
-  color: black !important;
+  color: #5d5e5e !important;
 }
 
 .LogoM {
@@ -47,14 +47,29 @@
   cursor: pointer;
 }
 
-.hidden {
-  display: none;
+ul {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  overflow: auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-@media (min-width: 1023px) and (max-width: 1360px) {
-  .hidden {
-    display: block;
-  }
+ul li {
+  white-space: nowrap;
+  width: auto;
+  list-style: none;
+  margin: 0 10px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+ul li:hover {
+  cursor: pointer;
+  color: #5d5e5e;
 }
 
 .btn-learn {
@@ -68,7 +83,7 @@
 }
 
 .anchor {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .anchor a {
@@ -117,7 +132,7 @@
 }
 
 .text-aside {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .popular-on-med {
