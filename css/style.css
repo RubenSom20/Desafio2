@@ -1,1 +1,59 @@
-.nav-link{color:rgba(0,0,0,0.54);font-family:'Open Sans', sans-serif}.nav-link:hover{color:black !important}.LogoM{width:120px}.LogoM img{width:100%;display:none}.LogoM span{display:block}@media (min-width: 1023px) and (max-width: 1360px){.LogoM img{display:block}.LogoM span{display:none}}.avatar img{width:32px;height:32px;border-radius:100%}.btn-upgrade{border:1px solid #888888}.btn-upgrade:hover{border:1px solid black}.cursor-hand:hover{cursor:pointer}.hidden{display:none}@media (min-width: 1023px) and (max-width: 1360px){.hidden{display:block}}
+.nav-link {
+  color: rgba(0, 0, 0, 0.54);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.nav-link:hover {
+  color: black !important;
+}
+
+.LogoM {
+  width: 120px;
+}
+
+.LogoM img {
+  width: 100%;
+  display: none;
+}
+
+.LogoM span {
+  display: block;
+}
+
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .LogoM img {
+    display: block;
+  }
+  .LogoM span {
+    display: none;
+  }
+}
+
+.avatar img {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+}
+
+.btn-upgrade {
+  border: 1px solid #888888;
+}
+
+.btn-upgrade:hover {
+  border: 1px solid black;
+}
+
+.cursor-hand:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .hidden {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */
