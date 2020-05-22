@@ -1,6 +1,7 @@
 // variables:
 $gray: rgba(0, 0, 0, 0.54);
 $green: #03a87c;
+$green-hover: #029e74;
 
 $breakpoint-xs: 360px;
 $breakpoint-sm: 767px;
@@ -48,7 +49,7 @@ $breakpoint-lg: 1360px;
     display: block;
   }
 
-  @include media(md) {
+  @include media(lg) {
     img {
       display: block;
     }
@@ -86,5 +87,59 @@ $breakpoint-lg: 1360px;
 
   @include media(md) {
     display: block;
+  }
+}
+
+.btn-learn{
+  background-color: $green;
+  color: #fff;
+  &:hover{
+    background-color: $green-hover;
+    color: #fff;
+  }
+}
+
+.anchor{
+  font-size: .8rem;
+  a{
+    color: black;
+  }
+}
+
+.card-order{
+  display: flex;
+  .b{
+    order: 2;
+    padding: 5px;
+  }
+  .a{
+    order: 1;
+  }
+  @include media(md) {
+    .b{
+      order: 1;
+      padding: 5px;
+    }
+    .a{
+      order: 2;
+    }
+  }
+}
+
+.card-img-top{
+  height: 150px;
+}
+
+.see-editors{
+  color:$green;
+}
+.text-aside{
+  font-size: .8rem;
+}
+
+.popular-on-med{
+  margin-top: 25px;
+  @include media(md) {
+    margin-top: 0;
   }
 }
