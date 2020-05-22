@@ -11,7 +11,7 @@ $breakpoint-lg: 1360px;
 
 @mixin media($media) {
   @if $media == xs {
-    @media (max-width: $breakpoint-sm) {
+    @media (max-width: $breakpoint-xs) {
       @content;
     }
   } @else if $media == sm {
@@ -26,6 +26,17 @@ $breakpoint-lg: 1360px;
     @media (min-width: $breakpoint-lg) {
       @content;
     }
+  }
+}
+
+body{
+  padding: 0;
+  @include media(md)  {
+    padding: 0 100px;
+  
+  }
+  @include media(sm){
+    padding: 0 100px;
   }
 }
 
@@ -126,8 +137,19 @@ ul {
   }
   .a {
     order: 1;
-  }
   @include media(md) {
+      .b {
+        order: 1;
+        padding: 5px;
+      }
+      .a {
+        order: 2;
+      }
+    }
+  }
+
+
+  @include media(lg) {
     .b {
       order: 1;
       padding: 5px;
@@ -163,3 +185,10 @@ svg{
     color: $gray-hover;
   }
 }
+
+.network-color {
+
+}
+ 
+
+
