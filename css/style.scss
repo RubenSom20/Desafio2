@@ -32,12 +32,21 @@ $breakpoint-lg: 1360px;
 body{
   padding: 0;
   @include media(md)  {
-    padding: 0 100px;
+    padding: 0 400px;
   
   }
   @include media(sm){
-    padding: 0 100px;
+    padding: 0 400px;
   }
+}
+
+.card-img-top-2{
+  width: 500px;
+}
+
+.card-border{
+  height:400px;
+  width: 300px;
 }
 
 .nav-link {
@@ -186,8 +195,9 @@ svg{
   }
 }
 
-.network-color {
-
+#imag-xl{
+  height: 150px;
+  width: 350px;
 }
  
 
