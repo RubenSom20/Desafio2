@@ -20,7 +20,7 @@
   display: block;
 }
 
-@media (min-width: 1023px) and (max-width: 1360px) {
+@media (min-width: 1360px) {
   .LogoM img {
     display: block;
   }
@@ -54,6 +54,79 @@
 @media (min-width: 1023px) and (max-width: 1360px) {
   .hidden {
     display: block;
+  }
+}
+
+.btn-learn {
+  background-color: #03a87c;
+  color: #fff;
+}
+
+.btn-learn:hover {
+  background-color: #029e74;
+  color: #fff;
+}
+
+.anchor {
+  font-size: .8rem;
+}
+
+.anchor a {
+  color: black;
+}
+
+.card-order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card-order .b {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  padding: 5px;
+}
+
+.card-order .a {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .card-order .b {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding: 5px;
+  }
+  .card-order .a {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+.card-img-top {
+  height: 150px;
+}
+
+.see-editors {
+  color: #03a87c;
+}
+
+.text-aside {
+  font-size: .8rem;
+}
+
+.popular-on-med {
+  margin-top: 25px;
+}
+
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .popular-on-med {
+    margin-top: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
