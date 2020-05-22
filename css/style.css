@@ -4,14 +4,23 @@ body {
 
 @media (min-width: 1023px) and (max-width: 1360px) {
   body {
-    padding: 0 100px;
+    padding: 0 400px;
   }
 }
 
 @media (min-width: 767px) and (max-width: 1023px) {
   body {
-    padding: 0 100px;
+    padding: 0 400px;
   }
+}
+
+.card-img-top-2 {
+  width: 500px;
+}
+
+.card-border {
+  height: 400px;
+  width: 300px;
 }
 
 .nav-link {
@@ -182,5 +191,24 @@ svg {
 svg:hover {
   cursor: pointer;
   color: #5d5e5e;
+}
+
+#imag-xl {
+  height: 150px;
+  width: 350px;
+}
+
+.network-color {
+  background-color: #D7EFEE;
+  padding: 10px;
+}
+
+.network-color img {
+  width: 40%;
+}
+
+.network-content-color {
+  background-color: #fafafa;
+  padding: 10px;
 }
 /*# sourceMappingURL=style.css.map */
