@@ -1,27 +1,90 @@
+// variables:
 $gray: rgba(0, 0, 0, 0.54);
 $green: #03a87c;
 
-.nav-link{
-    color: $gray;
-    font-family:'Open Sans', sans-serif;
-    &:hover{
-        color:black !important;
+$breakpoint-xs: 360px;
+$breakpoint-sm: 767px;
+$breakpoint-md: 1023px;
+$breakpoint-lg: 1360px;
+
+@mixin media($media) {
+  @if $media == xs {
+    @media (max-width: $breakpoint-sm) {
+      @content;
     }
+  } @else if $media == sm {
+    @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+      @content;
+    }
+  } @else if $media == md {
+    @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+      @content;
+    }
+  } @else if $media == lg {
+    @media (min-width: $breakpoint-lg) {
+      @content;
+    }
+  }
 }
 
-.LogoM{
-    width: 120px;
-    margin-top: 35px;
+.nav-link {
+  color: $gray;
+  font-family: 'Open Sans', sans-serif;
+
+  &:hover {
+    color: black !important;
+  }
 }
 
-.avatar{
-img{
+.LogoM {
+  width: 120px;
+
+  img {
+    width: 100%;
+    display: none;
+  }
+
+  span {
+    display: block;
+  }
+
+  @include media(md) {
+    img {
+      display: block;
+    }
+
+    span {
+      display: none;
+    }
+  }
+}
+
+.avatar {
+  img {
     width: 32px;
     height: 32px;
     border-radius: 100%;
-}
-}
-.descolor{
-    color:$gray;
+  }
 }
 
+.btn-upgrade {
+  border: 1px solid #888888;
+
+  &:hover {
+    border: 1px solid black;
+  }
+}
+
+.cursor-hand {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.hidden {
+  display: none;
+
+  @include media(md) {
+    display: block;
+  }
+}
