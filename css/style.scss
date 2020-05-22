@@ -41,7 +41,7 @@ body{
 }
 
 .card-img-top-2{
-  width: 500px;
+  width: 350px;
 }
 
 .card-border{
@@ -203,15 +203,28 @@ svg{
 .network-color{
   background-color:#D7EFEE;
   padding: 10px;
+  h5{
+    font-family: 'Noto Sans', sans-serif;
+  } 
   img{
     width: 40%;
+  
+  
   }
 }
 
 .network-content-color{
   background-color: #fafafa;
-  padding: 10px 
-}
- 
+  padding: 40px; 
+  font-family: "Noto Sans JP", sans-serif;
 
+}
+
+.nav-fixed{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+
+}
 
